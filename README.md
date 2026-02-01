@@ -34,22 +34,33 @@ Simscape Electrical (Specialized Power Systems)
 
 The following blocks are used to construct the model:
 
-Block	Purpose
-powergui- 	Power system simulation environment
-Three-Phase Source- 	Generates 3-phase supply
-Three-Phase V-I Measurement- 	Measures voltage & current
-Current Measurement- 	Phase current sensing
-Distributed Parameter Line- 	Models transmission line
-Three-Phase Transformer (Two Winding)- 	Voltage transformation
-Three-Phase Parallel RLC Load- 	Load modeling
-Three-Phase Fault-	Fault creation at selected time
-Scope-	Waveform visualization
-To Workspace-	Export signals to MATLAB
+| Block | Purpose |
+|-------|----------|
+| powergui | Power system simulation environment |
+| Three-Phase Source | Generates 3-phase supply |
+| Three-Phase V-I Measurement | Measures voltage & current |
+| Current Measurement | Phase current sensing |
+| Distributed Parameter Line | Models transmission line |
+| Three-Phase Transformer (Two Winding) | Voltage transformation |
+| Three-Phase Parallel RLC Load | Load modeling |
+| Three-Phase Fault | Fault creation at selected time |
+| Scope | Waveform visualization |
+| To Workspace | Export signals to MATLAB |
+
 
 
 ## 🔍 Working Principle
-Step 1 — Simulation
-Step 2 — Wavelet Decomposition
-Step 3 — Feature Extraction
-Step 4 — Fault Detection
+
+1. **Simulation**  
+   The Simulink model generates three-phase currents (A, B, C).
+
+2. **Wavelet Decomposition**  
+   Each current signal is decomposed using db4 wavelet to separate high-frequency transients.
+
+3. **Feature Extraction**  
+   Detail coefficients are extracted and their energy is calculated.
+
+4. **Fault Detection**  
+   If the energy exceeds a predefined threshold, a fault is detected.
+
 
