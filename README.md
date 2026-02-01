@@ -4,7 +4,7 @@ Fault_detection_in_transmission_line
 
 
 Transmission Line Fault Detection using Wavelet Transform
-📌 Project Overview
+## 📌 Project Overview
 
 This project implements fault detection in a three-phase transmission line using wavelet transform analysis in MATLAB/Simulink.
 
@@ -19,7 +19,7 @@ Double Line-to-Ground (LLG)
 can be detected automatically.
 
 
-🧰 Tools & Technologies
+## 🧰 Tools & Technologies
 
 MATLAB
 
@@ -30,7 +30,7 @@ Wavelet Toolbox
 Simscape Electrical (Specialized Power Systems)
 
 
-🏗 Simulink Blocks Used
+## 🏗 Simulink Blocks Used
 
 The following blocks are used to construct the model:
 
@@ -47,7 +47,7 @@ Scope-	Waveform visualization
 To Workspace-	Export signals to MATLAB
 
 
-🔍 Working Principle
+## 🔍 Working Principle
 Step 1 — Simulation
 Step 2 — Wavelet Decomposition
 Step 3 — Feature Extraction
